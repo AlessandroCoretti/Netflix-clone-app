@@ -3,6 +3,7 @@ import "./App.css";
 import CustomNavbar from "./components/CustomNavbar";
 import CustomTopbar from "./components/CustomTopbar";
 import CustomCard from "./components/CustomCard";
+import CustomFooter from "./components/CustoomFooter";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
 
       <CustomTopbar />
       <CustomCard />
+      <CustomFooter />
     </>
   );
 }

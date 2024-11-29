@@ -8,6 +8,10 @@ body {
   border-color: white;
 }
 
+.dropdown-menu.show {
+  background-color: black;
+}
+
 #navbar {
   background-color: black;
 }
