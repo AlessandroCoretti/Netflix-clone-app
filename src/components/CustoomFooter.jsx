@@ -1,6 +1,6 @@
 const CustomFooter = () => {
   return (
-    <footer className="bg-dark text-secondary mt-5 py-4">
+    <footer id="footer" className=" text-secondary mt-5 py-4">
       <div className="container px-5">
         <div className="d-flex gap-4">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-facebook" viewBox="0 0 16 16">

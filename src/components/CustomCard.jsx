@@ -37,12 +37,12 @@ class CustomCard extends Component {
   render() {
     console.log("RENDER");
     return (
-      <div className="container mt-4">
-        <h3 className="mb-2 text-white">Il Signore degli Anelli</h3>
+      <div className="container mt-4 text-center text-sm-start">
+        <h3 className="mb-2 text-white">The Lord of The Rings</h3>
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-6 ">
-          {this.state.remoteCards.map((card) => {
+          {this.state.remoteCards.slice(0, 6).map((card) => {
             return (
-              <div key={card.imdbID}>
+              <div key={card.imdbID} id="img-card">
                 <img src={card.Poster} alt="" className="img-fluid" />
               </div>
             );
