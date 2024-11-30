@@ -33,13 +33,28 @@ body {
 }
 
 .dropdown-menu.show {
-  background-color: #14141466;
+  background-color: #141414d6;
   border: 1px solid;
   border-color: white;
 }
 
+#svg1,
+#svg2 {
+  border: 1px solid;
+  border-color: #646464;
+}
+#svg1:hover,
+#svg2:hover {
+  border-color: white;
+  cursor: pointer;
+}
+
 #navbar {
   background-color: #141414;
+}
+
+.dropdown-item {
+  color: white;
 }
 
 #img-card {
