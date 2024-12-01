@@ -6,11 +6,13 @@ import CustomCard from "./components/CustomCard";
 import CustomFooter from "./components/CustoomFooter";
 import CustomCard2 from "./components/CustomCard2";
 import CustomCard3 from "./components/CustomCard3";
+import CustomVideo from "./components/CustomVideo";
 
 function App() {
   return (
     <>
       <CustomNavbar />
+      <CustomVideo />
       <CustomTopbar />
       <CustomCard />
       <CustomCard2 />
