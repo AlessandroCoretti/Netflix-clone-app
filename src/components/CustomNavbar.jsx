@@ -1,4 +1,5 @@
-import { ButtonGroup, Container, Dropdown, DropdownButton, Nav, Navbar } from "react-bootstrap";
+import { ButtonGroup, Container, Dropdown, DropdownButton, Navbar } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
 const CustomNavbar = () => {
   return (
@@ -10,11 +11,21 @@ const CustomNavbar = () => {
               <img alt="netflix-logo" src="/netflix_logo.png" width="120" height="60" className="d-inline-block align-top" />
             </Navbar.Brand>
             <div className="d-flex justify-content-between gap-3 d-none d-lg-flex">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#tvshows">TV Shows</Nav.Link>
-              <Nav.Link href="#movies">Movies</Nav.Link>
-              <Nav.Link href="#recentlyadded">Recently Added</Nav.Link>
-              <Nav.Link href="#mylist">My List</Nav.Link>
+              <NavLink to="/" className="nav-link">
+                Home
+              </NavLink>
+              <NavLink to="/tvshows" className="nav-link">
+                TV Shows
+              </NavLink>
+              <NavLink to="/movies" className="nav-link">
+                Movies
+              </NavLink>
+              <NavLink to="/recentlyadded" className="nav-link">
+                Recently Added
+              </NavLink>
+              <NavLink to="/mylist" className="nav-link">
+                My List
+              </NavLink>
             </div>
             <div className="d-block d-lg-none">
               {[DropdownButton].map((DropdownType, idx) => (
